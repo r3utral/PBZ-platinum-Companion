@@ -1,0 +1,322 @@
+PANGZHEN — RECORRIDO DETALLADO #27–#106
+Fuente de ubicaciones: PowerPyx. Redacción y navegación para Platinum Companion.
+
+#27 · Cinta de la bailarina · Material de templado
+Campana / referencia: Pabellón Tianxiang
+Después del pisapapeles del tigre (#26), sube al tercer piso del pabellón. Entra en la habitación pequeña de la izquierda. Antes de marcharte, interactúa con la bailarina para conseguir el abanico de danza desgarrado, necesario para la misión de la actriz.
+
+#28 · Vasija medicinal de la mansión · Accesorio
+Campana / referencia: Cruce de la Mansión Huang
+Vuelve a la campana del cruce y abre la mansión con la llave recibida de Niu. Reúne cuatro piezas: cadena, en el cuarto de la marioneta que murmura; mango, por el pasillo a la derecha de las escaleras; cuerpo, en el mueble del piso superior; y tapa, en el cadáver de las escaleras del dormitorio. Las cuatro forman el accesorio.
+
+#29 · Flor de memoria · Flor de memoria
+Campana / referencia: Mansión Huang
+En la habitación donde terminaste de recoger las piezas de la vasija, comprueba también la flor de memoria. No salgas del cuarto sin hacer el siguiente paso, pues la misión #30 se encuentra aquí mismo.
+
+#30 · Un hermano más · Misión secundaria
+Campana / referencia: Mansión Huang
+Inicia el relato en la misma habitación de la flor #29 y del último fragmento de la vasija. Agota la interacción disponible antes de regresar a la ciudad.
+
+#31 · Abanico de danza · Accesorio
+Campana / referencia: Taberna de Myst
+REGRESO DENTRO DE PANGZHEN: vuelve a la Taberna de Myst con el abanico desgarrado obtenido de la bailarina del Pabellón Tianxiang. Habla con la actriz principal de ópera para cerrar esta entrega y recibir el accesorio.
+
+#32 · Fragmento de ámbar Sha-Chi · Mejora
+Campana / referencia: Taberna de Myst
+Sal de la taberna hacia los tejados. Mantente en la línea de techos de la izquierda hasta localizar uno con un agujero. Déjate caer por él, gira hacia atrás y abre el cofre dentro del edificio.
+
+#33 · Campana: estanque de la ciudad sur · Campana
+Campana / referencia: Estanque de la ciudad sur
+Desde el edificio del fragmento anterior, baja al nivel de la calle. Toma el sendero que sale a la izquierda hacia la zona del estanque y activa la campana.
+
+#34 · Campana: arco del callejón trasero · Campana
+Campana / referencia: Estanque de la ciudad sur
+Regresa por las escaleras desde la campana del estanque, sigue las calles y cruza el puente. Encontrarás la siguiente campana poco después de cruzar.
+
+#35 · Colmillo de lobo · Arma fantasma
+Campana / referencia: Arco del callejón trasero
+Avanza por la historia y derrota a Wu Xuan, el general caído. El filo fantasma se obtiene como recompensa del combate; registra el botín antes de salir de la arena.
+
+#36 · Barra de tinta · Tesoro
+Campana / referencia: Arena de Wu Xuan
+Tras vencer a Wu Xuan, sigue de frente y atraviesa la puerta pequeña. Sube las escaleras: hay un cofre dentro de una construcción pequeña.
+
+#37 · Campana: escondite de Zhang · Campana
+Campana / referencia: Arena de Wu Xuan
+Desde la arena de Wu Xuan, entra al edificio de la derecha y sal por la parte posterior. Continúa hasta la construcción siguiente y entra para activar la campana del escondite de Zhang.
+
+#38 · Manual de Manos Rápidas · Material de templado
+Campana / referencia: Escondite de Zhang
+IMPORTANTE PARA EL PLATINO: en el escondite, baja por el agujero del suelo y habla con Zhang, Manos Rápidas. Abre su tienda y compra el manual. PowerPyx indica un costo de 50 000 de polvo remanente; revisa el precio que muestra tu partida.
+
+#39 · Campana: descanso del callejón trasero · Campana
+Campana / referencia: Escondite de Zhang
+Sal otra vez al exterior del escondite de Zhang y sube la escalera amplia. Activa la campana al llegar arriba.
+
+#40 · Fragmento de piedra negra · Mejora
+Campana / referencia: Descanso del callejón trasero
+Desde la campana, elimina al grupo de enemigos situado directamente adelante. Recoge su botín antes de abandonar el área.
+
+#41 · Fragmento de ámbar Sha-Chi · Mejora
+Campana / referencia: Descanso del callejón trasero
+Sube las escaleras de piedra y continúa por el callejón. Busca a la izquierda un muro que puedes trepar para entrar en las casas en ruinas; sigue el recorrido interior hasta el altar con el fragmento.
+
+#42 · Fragmento de piedra negra · Mejora
+Campana / referencia: Casas en ruinas del callejón
+Sal de las casas donde recogiste el ámbar y vuelve al callejón. Derrota a todos los enemigos y revisa el botín. AVISO DE COMUNIDAD: algunos jugadores reportaron que no apareció; otros señalaron enemigos atrapados dentro de muros. Comprueba toda la zona antes de darlo por bug.
+
+#43 · Talismán de congelación · Accesorio
+Campana / referencia: Callejón de las casas en ruinas
+Desde el combate del #42, llega hasta el extremo del mismo callejón y recoge el talismán. Es aconsejable completar #42 antes de abandonar esta zona.
+
+#44 · Campana: residencia del callejón estrecho, segunda planta · Campana
+Campana / referencia: Callejón estrecho
+Desanda el tramo final del callejón y toma las escaleras de madera de la izquierda. Atraviesa las casas conectadas hasta alcanzar la campana del segundo piso.
+
+#45 · Fragmento de ámbar Sha-Chi · Mejora
+Campana / referencia: Residencia del callejón estrecho, segunda planta
+Desde la campana, déjate caer al nivel inferior y utiliza la tirolesa. Al finalizar, verás el cofre con el fragmento delante.
+
+#46 · Tintero de borde tallado · Tesoro
+Campana / referencia: Final de la tirolesa
+Tras recoger el ámbar, sube las escaleras cortas cercanas y entra en la construcción. Allí encontrarás el tesoro.
+
+#47 · Flor de memoria · Flor de memoria
+Campana / referencia: Edificio del tintero
+Está inmediatamente junto al tesoro #46. Recógela antes de volver a la calle.
+
+#48 · Campana: estanque de la canción que se desvanece · Campana
+Campana / referencia: Calle del canto
+Sal a la calle desde el edificio anterior y sigue el camino hacia donde se escucha cantar. Activa la campana; el siguiente tramo conduce al combate con Gu Wanyue.
+
+#49 · Flor de memoria · Flor de memoria
+Campana / referencia: Arena de Gu Wanyue
+Derrota a Gu Wanyue, el espectro que llora, y recoge el fragmento de fanático «Fijación» de la historia. Después baja al pozo dentro de su arena: la flor está al fondo.
+
+#50 · Flor de memoria y llave de la puerta exterior del Mandato · Flor de memoria
+Campana / referencia: Pozo de Gu Wanyue
+Desde la flor #49, sigue avanzando por el pozo. Junto a un ataúd hallarás otra flor y la llave de la puerta exterior del Campamento del Mandato. Comprueba que recogiste ambos objetos antes de continuar.
+
+#51 · Campana: pozo de Wei Sanchuan · Campana
+Campana / referencia: Túnel bajo el pozo
+Continúa por la cueva después del ataúd y busca una campana cerca de las escaleras. Actívala antes de seguir con la ruta principal.
+
+#52 · Flujo perpetuo · Medicina
+Campana / referencia: Pozo de Wei Sanchuan
+Avanza hasta el enfrentamiento contra Xie Qiudong, el sanador divino. Esta medicina es la recompensa de derrotarlo durante la historia.
+
+#53 · Campana: casa de la Serpiente Verde · Campana
+Campana / referencia: Casa de la Serpiente Verde
+Después de la arena de Xie Qiudong, progresa por el camino hasta distinguir el edificio verde. La campana está frente a la entrada.
+
+#54 · Brebaje de la Serpiente Verde · Medicina
+Campana / referencia: Casa de la Serpiente Verde
+Entra en el edificio junto a la campana y conversa con Xie Huichun. Antes de salir, sube al piso de arriba y recoge la vesícula de serpiente verde de una habitación pequeña: la necesitarás más adelante.
+
+#55 · Flor de memoria · Flor de memoria
+Campana / referencia: Casa de la Serpiente Verde
+Después de obtener la vesícula en el piso de arriba, sal por la ventana: la flor está al otro lado, muy cerca del punto de caída.
+
+#56 · Flor de memoria · Flor de memoria
+Campana / referencia: Casa de la Serpiente Verde
+Regresa a la campana, date vuelta y usa el gancho para subir al tejado. Trepa por la escalera de mano y encontrarás la flor delante.
+
+#57 · Fragmento de piedra negra · Mejora
+Campana / referencia: Tejado de la Serpiente Verde
+Desde la flor anterior, entra en la cueva y síguela hasta la salida. Derrota a todos los enemigos del patio exterior y revisa el botín.
+
+#58 · Esencia de bronce · Material de templado
+Campana / referencia: Patio después de la cueva
+Cuando hayas recogido la piedra negra del #57, gira y examina el horno del patio. Aquí consigues la esencia necesaria para templar la espada de bronce Tianxuan.
+
+#59 · Sutra del templo Kuye · Material de templado
+Campana / referencia: Taberna de Myst
+REGRESO DENTRO DE PANGZHEN: templa la espada de bronce Tianxuan con la esencia del #58. Después viaja a la Taberna de Myst y habla de nuevo con el taoísta Bi Di para obtener este material.
+
+#60 · Protección contra el trueno · Accesorio
+Campana / referencia: Casa de la Serpiente Verde
+Regresa a la campana de la Serpiente Verde. Entra en la construcción a la izquierda y abre el cofre del fondo de la habitación.
+
+#61 · Fragmento Sha-Chi · Mejora
+Campana / referencia: Casa de la Serpiente Verde
+Desde el cofre anterior, sube las escaleras del mismo edificio y recorre el balcón hasta su extremo, donde está el fragmento.
+
+#62 · Flor de memoria · Flor de memoria
+Campana / referencia: Casa de la Serpiente Verde
+Sal del edificio del fragmento #61 por la puerta lateral. La flor está junto a las escaleras.
+
+#63 · Diluvio de You Loong · Arma fantasma
+Campana / referencia: Escaleras de la Serpiente Verde
+Desde la flor #62, baja todas las escaleras hasta la arena inferior. Derrota a You Loong, líder de la tripulación de Aguas Negras, para obtener el filo fantasma.
+
+#64 · Árbol banyan — desafío · Desafío
+Campana / referencia: Arena de You Loong
+Desde donde peleaste con You Loong, cruza la pasarela de madera. Activa el árbol y completa las oleadas de enemigos. El cierre incluye una revancha contra el maestro Bi Yuan de Tianxuan.
+
+#65 · Campana: salón de la danza del león · Campana
+Campana / referencia: Salón de la danza del león
+Desde el árbol banyan, vuelve hacia las escaleras y desvíate al callejón de la izquierda. La campana aparece al frente.
+
+#66 · Flor de memoria · Flor de memoria
+Campana / referencia: Salón de la danza del león
+Sal por el camino frente a la campana, usa el gancho para alcanzar el puente y avanza hacia la izquierda. Busca la flor a la derecha. También inicia en esta posición el relato #67.
+
+#67 · Sangre contra sangre · Misión secundaria
+Campana / referencia: Puente del salón del león
+En el mismo punto donde recogiste la flor #66, activa la misión familiar «Sangre contra sangre» antes de seguir hacia el santuario.
+
+#68 · Campana: plaza del santuario ancestral · Campana
+Campana / referencia: Santuario ancestral
+Desde el punto del relato #67, continúa por el sendero y activa la campana situada a la izquierda.
+
+#69 · Lanza del trueno · Arma fantasma
+Campana / referencia: Plaza del santuario ancestral
+Derrota a Chang Hong, el lancero del trueno, durante la historia para conseguir este filo. Antes de dejar la arena, vuelve a ella y elimina a los enemigos que aparecen para obtener la llave del salón del león pesado.
+
+#70 · Colgante de jade bendecido · Accesorio
+Campana / referencia: Arena de Chang Hong
+Después de vencer a Chang Hong, entra en el edificio que queda frente a la arena. Si recogiste el lirio de carne en el Valle del Arroyo Lagrimoso, podrás salvar al anciano y recibir el accesorio. Si no lo tienes, vuelve primero al Valle.
+
+#71 · Fragmento de piedra negra · Mejora
+Campana / referencia: Salón de la danza del león
+Regresa a la campana del Salón de la Danza del León. Abre la puerta con la llave conseguida tras Chang Hong, derrota a los enemigos del interior y recoge el fragmento.
+
+#72 · Flor de memoria · Flor de memoria
+Campana / referencia: Interior del salón del león
+Desde los enemigos de #71, cruza a la habitación siguiente. La flor está junto al estanque pequeño.
+
+#73 · Cabeza del león llameante · Material de templado
+Campana / referencia: Interior del salón del león
+Continúa por el edificio situado a la derecha de la flor y vuelve a salir al exterior. Retira las llamas que bloquean el acceso y revisa un pequeño rincón.
+
+#74 · Fragmento de ámbar Sha-Chi · Mejora
+Campana / referencia: Interior del salón del león
+Vuelve a entrar al edificio después de recoger #73 y sube las escaleras. Déjate caer desde el balcón de la izquierda; el cofre está arriba de unas escaleras.
+
+#75 · Campana: profundidades del salón del león · Campana
+Campana / referencia: Profundidades del salón del león
+Desde el cofre del ámbar, sal por la parte delantera del edificio y sigue el camino que asciende por la colina. Activa la campana antes del siguiente jefe.
+
+#76 · Campana: león sellado · Campana
+Campana / referencia: Arena del maestro del león
+Derrota a Flame, gran maestro de la danza del león enmascarado, y recoge la melena llameante latente. Después activa la campana que aparece directamente en su arena.
+
+#77 · Apoyapinceles de jade · Tesoro
+Campana / referencia: Mercado
+REGRESO DENTRO DE PANGZHEN: teletranspórtate a la campana del Mercado. Date vuelta y apaga las llamas ante una puerta pequeña. Pasa, sube al tejado de la derecha y sigue la hilera de techos hasta el cofre.
+
+#78 · Fulgor dorado · Arma fantasma
+Campana / referencia: Escondite de Zhang
+REGRESO DENTRO DE PANGZHEN: viaja a la campana del escondite de Zhang, habla con Manos Rápidas Zhang y reclama el filo fantasma correspondiente.
+
+#79 · Melena llameante · Arma fantasma
+Campana / referencia: Salón Jingyang
+REGRESO DENTRO DE PANGZHEN: ve a la campana del Salón Jingyang, cruza la puerta y habla con Lei Dang para que repare la melena latente conseguida del jefe del #76.
+
+#80 · Campana: pabellón de la colina negra · Campana
+Campana / referencia: Estanque de la canción que se desvanece
+Desde la campana del estanque, date vuelta y toma la ruta de la derecha. Quema las ramas que bloquean el paso y continúa hasta cruzar el puente de piedra; activa la campana siguiente.
+
+#81 · Espejo divino sin forma · Accesorio
+Campana / referencia: Pabellón de la colina negra
+El accesorio está muy cerca de la campana del pabellón. Antes de bajar, busca también la manivela de la bodega del callejón trasero en un cofre: sigue la cornisa, déjate caer a la plataforma de madera y baja la escalera de mano para habilitar el atajo.
+
+#82 · Flor de memoria · Flor de memoria
+Campana / referencia: Cornisa bajo el pabellón negro
+Después de recoger la manivela de la bodega y desbloquear la escalera del atajo, desciende por ella. La flor y el relato del #83 se encuentran en esta zona.
+
+#83 · El corazón de una madre · Misión secundaria
+Campana / referencia: Zona bajo la colina negra
+Inicia el relato «El corazón de una madre» junto a la flor #82, al pie de la escalera del atajo. No te vayas sin activar ambas entradas.
+
+#84 · Campana: arrabales de Pangzhen · Campana
+Campana / referencia: Arrabales de Pangzhen
+Desde la flor y la misión #82–83, sigue el sendero hacia delante hasta llegar a la campana de los arrabales.
+
+#85 · Campana: casa del anciano Gen · Campana
+Campana / referencia: Casa del anciano Gen
+Desde la campana de los arrabales, sube por la escalera de mano de la derecha. Sigue la colina y entra por la puerta de la izquierda. Tras activar la nueva campana, abre la puerta izquierda e inspecciona el cadáver: obtendrás el peine viejo de madera polvoriento.
+
+#86 · Flor de memoria · Flor de memoria
+Campana / referencia: Casa del anciano Gen
+Desde la campana de la casa de Gen, date vuelta y utiliza la manivela de la bodega del callejón trasero para abrir el camino. Cruza la bodega, sube la escalera de mano y derrota al enemigo de arriba; recoge su botín, incluida la flor.
+
+#87 · Rocío misericordioso · Medicina
+Campana / referencia: Bodega abierta con manivela
+Forma parte de la recompensa del enemigo situado arriba de la escalera al final de la bodega abierta desde la casa de Gen (#86). Comprueba que recibiste tanto la medicina como la flor.
+
+#88 · Espantapájaros — desafío de Lei Ting · Desafío
+Campana / referencia: Casa del anciano Gen
+Desde la campana de Gen, sal de frente y desciende por la colina hasta hallar el espantapájaros. Derrota al acólito Lei Ting y recoge su máscara del trueno.
+
+#89 · Campana: alojamientos del Mandato · Campana
+Campana / referencia: Cruce del Pabellón del Conocimiento
+Viaja al Cruce del Pabellón del Conocimiento. Sube las escaleras y quema las ramas de la izquierda. Sigue el camino por las construcciones; la campana está en uno de los edificios a la derecha.
+
+#90 · Campana: almacén junto al muelle · Campana
+Campana / referencia: Alojamientos del Mandato
+Desde los alojamientos, continúa por los tejados hasta llegar al almacén que está junto al muelle. Activa su campana.
+
+#91 · Ganchos de despedida · Arma
+Campana / referencia: Almacén junto al muelle
+Desde la campana del almacén, baja al patio grande y derrota a Soulclaimer, guardián de las sombras de élite. Recoge su arma antes de seguir a los muelles.
+
+#92 · Campana: muelles de Pangzhen · Campana
+Campana / referencia: Arena de Soulclaimer
+Después de la pelea con Soulclaimer, baja las escaleras. La campana de los muelles queda a tu derecha.
+
+#93 · Fragmento de ámbar Sha-Chi · Mejora
+Campana / referencia: Muelles de Pangzhen
+Desde la campana de los muelles, entra en la construcción cercana y sube a la planta superior para recoger el fragmento. Aquí se abre el acceso al Lago Meigu, pero PowerPyx recomienda no iniciar todavía esa región.
+
+#94 · Flor de memoria · Flor de memoria
+Campana / referencia: Cruce de la Mansión Huang
+REGRESO DENTRO DE PANGZHEN: ve al cruce de la mansión Huang, continúa por la calle y sube las escaleras a la derecha. Quema las ramas de arriba, sigue ascendiendo y recoge la flor a la izquierda de uno de los tramos.
+
+#95 · Campana: mansión del Espejismo · Campana
+Campana / referencia: Acceso a la Mansión del Espejismo
+Desde la flor anterior, sube las escaleras que están delante y activa la campana. Este es el último punto numerado de la primera visita a Pangzhen; la zona superior de Espejismo se completa más adelante en su propio mapa.
+
+#96 · Flor de memoria · Flor de memoria
+Campana / referencia: Arrabales de Pangzhen
+VUELTA DESPUÉS DEL MANDATO: primero derrota al discípulo principal de la Formación de las Siete Estrellas en el Campamento del Mandato. Regresa a los arrabales y baja la colina; derrota al NPC que se transforma en enemigo y recoge su flor. Habla también con el líder del «Lobo» de túnica púrpura junto a la Taberna de Myst para recibir el Coraje del héroe roto.
+
+#97 · Pañuelo Sha-Chi · Accesorio
+Campana / referencia: Cruce del Pabellón del Conocimiento
+VUELTA TRAS LA MISIÓN DE XUE: una vez reunidos los tres objetos para el relato de Xue, admirador de héroes, ve a la campana del Cruce del Pabellón del Conocimiento. Entra en el edificio de la derecha, sube hasta el Niño de la Perspicacia y reclama la recompensa.
+
+#98 · Pipa ilusoria · Material de templado
+Campana / referencia: Taberna de Myst
+VUELTA TRAS REUNIR LAS TRES PIEZAS: cuando tengas los tres fragmentos de la pipa ilusoria, habla con Myst en su taberna para restaurarla. La reparación potencia automáticamente la Pipa Desgarracorazones; no se añade un filo fantasma distinto.
+
+#99 · No me olvides · Misión secundaria
+Campana / referencia: Mercado
+VUELTA CON LA HABILIDAD PARA DISIPAR BARRERAS: desde el Mercado, date vuelta, entra al edificio izquierdo y elimina la barrera. Sube al último piso y habla con la muchacha acostada para comenzar el relato.
+
+#100 · Núcleo del trueno · Material de templado
+Campana / referencia: Edificio de No me olvides
+Desde la muchacha de #99, entra en una habitación lateral y busca un agujero en el suelo. Baja al nivel inferior y abre el cofre con el material.
+
+#101 · Bola de fuego del león auspicioso · Accesorio
+Campana / referencia: León sellado
+VUELTA CON LA HABILIDAD PARA DISIPAR BARRERAS: desde la campana del León Sellado sube la colina, elimina la barrera del final y continúa hasta el árbol. Allí está el accesorio.
+
+#102 · Cubo de chispa remanente · Objeto clave
+Campana / referencia: Taberna de Myst
+VUELTA TRAS COMPLETAR LOS DOS OBJETOS DE «EL CUBO»: habla primero con el pescador junto a la campana de la Taberna de Myst y después conversa con Myst para recibir el cubo.
+
+#103 · Talismán definitivo · Accesorio
+Campana / referencia: Mercado
+VUELTA TRAS COMPLETAR «NO ME OLVIDES»: desde el Mercado, vuelve al edificio izquierdo, disipa la barrera y sube a ver a la joven en la cama. Entrega o cierra los objetivos del relato para obtener el accesorio.
+
+#104 · Flor de memoria — Bai Xue · Flor de memoria
+Campana / referencia: Casa de la Serpiente Verde
+⛔ PERDIBLE: antes debiste elegir «Esto no te absolverá de tus pecados» al final de «Libro de expiación», no «Déjalo en paz», para habilitar la misión de Bai Xue. Necesitas la llave del patio del callejón trasero. Desde la Serpiente Verde cruza el puente, sube las escaleras, abre la puerta izquierda y avanza por los tejados hasta la persona postrada. Entrégale el collar manchado de sangre y recoge la flor.
+
+#105 · Flor de memoria — campo junto a Bai Xue · Flor de memoria
+Campana / referencia: Casa de Bai Xue
+⛔ PERDIBLE: después de la interacción de #104, date vuelta y revisa el campo cercano. Debe estar disponible la segunda flor; requiere haber desbloqueado el relato de Bai Xue.
+
+#106 · Nieve y sangre · Accesorio
+Campana / referencia: Casa de Bai Xue
+⛔ PERDIBLE: desde la segunda flor (#105), inspecciona las rocas situadas en la base del árbol para conseguir el accesorio. Si la elección anterior bloqueó el relato de Bai Xue, la recompensa también puede quedar inaccesible.
