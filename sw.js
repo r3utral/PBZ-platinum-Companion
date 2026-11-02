@@ -1,5 +1,5 @@
-/* Platinum Companion v1.0.1 — increase CACHE_VERSION when publishing updates. */
-const CACHE_VERSION='platinum-companion-app-v1.0.0';
+/* Platinum Companion v1.2.0 — increase CACHE_VERSION when publishing updates. */
+const CACHE_VERSION='platinum-companion-app-v1.2.0';
 const ASSETS=['./','./index.html','./manifest.webmanifest','./icons/icon-192.png','./icons/icon-512.png'];
 self.addEventListener('install', event=>{
   event.waitUntil((async()=>{
@@ -21,6 +21,17 @@ self.addEventListener('fetch',event=>{
   if(request.method!=='GET')return;
   const url=new URL(request.url);
   if(url.origin!==self.location.origin||!url.pathname.startsWith(new URL(self.registration.scope).pathname))return;
+  if(url.pathname.endsWith('/catalog.json')){
+    // The collectible index can be updated independently of the app shell.
+    event.respondWith((async()=>{
+      try{
+        const response=await fetch(request);
+        if(response.ok){const cache=await caches.open(CACHE_VERSION);await cache.put(request,response.clone())}
+        return response;
+      }catch(e){return (await caches.match(request))||Response.error()}
+    })());
+    return;
+  }
   if(request.mode==='navigate'){
     event.respondWith((async()=>{
       try{
