@@ -21,7 +21,12 @@ PAGES={
 'Espejismo':'phantom-blade-zero-mirage-estate-pangzhen-collectible-locations/',
 'Soulrend':'phantom-blade-zero-mount-soulrend-collectible-locations/'
 }
-EXPECTED_MIN={'Valle':55,'Bosque':75,'Lu':70,'Pangzhen':95,'Mandato':56,'Meigu':75,'Montaña':30,'Espejismo':35,'Soulrend':13}
+EXPECTED_MIN={'Valle':55,'Bosque':69,'Lu':70,'Pangzhen':95,'Mandato':56,'Meigu':75,'Montaña':30,'Espejismo':35,'Soulrend':13}
+# PowerPyx currently lists 83 Crimson Forest collectibles but only documents
+# #1-#68 and #83 in the region's numbered article. #69-#82 are covered
+# incompletely in its later Mirage Estate / frozen-lake walkthrough.
+# These are SOURCE gaps, not 14 invented collectible locations.
+KNOWN_SOURCE_GAPS={'Bosque': set(range(69,83))}
 NUMERIC={'Valle','Bosque','Lu','Pangzhen','Mandato','Meigu','Montaña'}
 SLUG={'Valle':'valle','Bosque':'bosque','Lu':'lu','Pangzhen':'pangzhen','Mandato':'mandato','Meigu':'meigu','Montaña':'montaña','Espejismo':'espejismo','Soulrend':'soulrend'}
 KIND_PREFIX=re.compile(r'^(?:Memory Flower(?:\s|\s*–)|Upgrade:|Bell\s*\(|Weapon:|Phantom Edge:|Weapon Tempering Material:|Phantom Edge Tempering Material:|Tempering Material:|Accessory(?: Fragment)?:|Medicine:|Healing:|Quick Hand (?:Zhang )?Treasure:|Quest(?:s)?:|Key Item:|Boss:|Challenge:|Scarecrow:|Banyan Tree:|Quick Hand.s Request\s*\()',re.I)
@@ -205,7 +210,20 @@ def build(fetcher):
         if area in NUMERIC:
             found={t['num'] for t in arr}
             missing=[n for n in range(1,max(found)+1) if n not in found]
-            if missing:raise ValueError(f'{area}: faltan números {missing[:20]} en la extracción. No se publicará una lista incompleta.')
+            unexpected=sorted(set(missing)-KNOWN_SOURCE_GAPS.get(area,set()))
+            if unexpected:
+                raise ValueError(f'{area}: faltan números no documentados como huecos conocidos: {unexpected[:20]}. No se publicará una lista incompleta.')
+            if missing:
+                data['warnings'].append({
+                    'region':area,
+                    'type':'huecos_en_fuente',
+                    'missing_numbers':missing,
+                    'message':('PowerPyx anuncia 83 coleccionables en el Bosque Carmesí, '
+                               'pero no enumera individualmente estos números en su artículo regional. '
+                               'Consulta también el apartado de limpieza del Bosque en Mansión del Espejismo.'),
+                    'source':url,
+                })
+                print(f'AVISO {area}: PowerPyx aún no enumera {len(missing)} números: {missing}. Se conservarán como huecos de fuente.')
         ids=[t['id'] for t in arr]
         if len(ids)!=len(set(ids)):raise ValueError(f'{area}: IDs duplicados')
         data['maps'][area]=arr;data['count']+=len(arr)
