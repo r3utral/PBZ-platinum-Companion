@@ -9,33 +9,35 @@ permissions:
 jobs:
   actualizar:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
-
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-
       - name: Actualizar certificados y dependencias
         run: |
           sudo apt-get update -qq
           sudo apt-get install --reinstall -y ca-certificates
           sudo update-ca-certificates
           python -m pip install --upgrade requests certifi beautifulsoup4
-
       - name: Diagnosticar certificado de PowerPyx
         run: |
           echo | openssl s_client -connect www.powerpyx.com:443 -servername www.powerpyx.com 2>/dev/null | openssl x509 -noout -dates -issuer -subject || true
-
-      - name: Extraer catálogo publicado
+      - name: Auditar los nueve mapas y extraer catálogo
         env:
           REQUESTS_CA_BUNDLE: /etc/ssl/certs/ca-certificates.crt
         run: python sync_powerpyx.py
-
-      - name: Guardar catálogo si hubo cambios
+      - name: Guardar informe de los nueve mapas (incluso si falla)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: auditoria-powerpyx-todos-los-mapas
+          path: catalog_audit.json
+          if-no-files-found: warn
+          retention-days: 30
+      - name: Publicar solo si TODAS las regiones son válidas
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add catalog.json
-          git diff --cached --quiet || (git commit -m "Actualizar catálogo PowerPyx" && git push)
+          git diff --cached --quiet || (git commit -m "Actualizar catálogo PowerPyx tras auditoría global" && git push)
