@@ -1,4 +1,4 @@
-/* Platinum Companion v1.0.0 — increase CACHE_VERSION when publishing updates. */
+/* Platinum Companion v1.0.1 — increase CACHE_VERSION when publishing updates. */
 const CACHE_VERSION='platinum-companion-app-v1.0.0';
 const ASSETS=['./','./index.html','./manifest.webmanifest','./icons/icon-192.png','./icons/icon-512.png'];
 self.addEventListener('install', event=>{
