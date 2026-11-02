@@ -11,7 +11,7 @@
 .custom-add{margin:0 0 22px;padding:16px;border:1px dashed #7b8c90;border-radius:12px;background:#1b242c}.custom-add>label{display:block;font-size:12px;color:#cbd5d9;margin-bottom:9px}.custom-addrow{display:grid;grid-template-columns:2fr 1fr auto;gap:8px}.custom-addrow>.button{white-space:nowrap}@media(max-width:650px){.custom-addrow{grid-template-columns:1fr 1fr}.custom-addrow>input{grid-column:1/-1}.custom-addrow>.button{width:100%}}
 .coverage-note{border:1px solid var(--line);border-left:4px solid var(--orange);background:var(--card2);padding:14px 16px;border-radius:12px;margin:0 0 18px;color:var(--ink)}.coverage-note p{font-size:.9rem;color:var(--muted);margin:.35rem 0}.coverage-note small{color:var(--muted)}
 </style></head><body>
-<div class="app"><aside class="side"><div class="brand"><div class="mini">Phantom Blade Zero</div><h2>Cuaderno<br>del platino</h2><p>Ruta + arsenal · Offline · v1.2</p></div><div class="navlabel">Elige el mapa</div><nav id="maps"></nav><div class="navlabel">Equipamiento</div><button class="mapbutton arsenal-side" data-view="weapons">⚔ Arsenal · armas y recomendaciones</button><div class="sidefoot">Guía instalable: cada jugador lleva su propio progreso. Usa «Exportar JSON» para respaldarlo.<p>Los mapas y el arsenal están incluidos.</p></div></aside>
+<div class="app"><aside class="side"><div class="brand"><div class="mini">Phantom Blade Zero</div><h2>Cuaderno<br>del platino</h2><p>Ruta + arsenal · Offline · v1.4</p></div><div class="navlabel">Elige el mapa</div><nav id="maps"></nav><div class="navlabel">Equipamiento</div><button class="mapbutton arsenal-side" data-view="weapons">⚔ Arsenal · armas y recomendaciones</button><div class="sidefoot">Guía instalable: cada jugador lleva su propio progreso. Usa «Exportar JSON» para respaldarlo.<p>Los mapas y el arsenal están incluidos.</p></div></aside>
 <main class="main"><div class="top"><div class="mini">◆ Ruta del platino · estrategias de jefes · arsenal</div><div class="actions"><button class="button" id="installApp" title="Instalar en este dispositivo">＋ Instalar app</button><button class="button" id="backup">↓ Exportar JSON</button><button class="button" id="upload">↑ Importar JSON</button><input class="sr" id="file" type="file" accept="application/json,.json"><button class="button gold" id="next">Ir a mi paso actual</button></div></div>
 <div id="appUpdateBanner" role="status" aria-live="polite" hidden style="margin:10px 0;padding:12px 14px;border:1px solid #756144;border-radius:12px;background:#222d36;color:#f0c987">Nueva versión disponible. <button class="button gold tiny" id="reloadUpdate" type="button">Actualizar ahora</button></div><div class="tabs" role="tablist" aria-label="Secciones"><button class="tab active" data-view="route" role="tab" aria-selected="true">🗺 Ruta por mapas</button><button class="tab" data-view="weapons" role="tab" aria-selected="false">⚔ Arsenal y armas</button></div><div id="routePane"><section class="hero"><div class="mini">Progreso independiente por dispositivo · versión sincronizable 1.2</div><h1>Ruta <span style="color:var(--gold)">integrada</span> del platino</h1><p>Una sola lista cronológica por mapa con avisos de bugs y puntos de regreso a mapas anteriores. Arriba siempre aparece «Estás aquí» y al marcar el paso actual se actualiza automáticamente.</p></section>
 <div class="metrics"><div class="metric"><small>Marcas del respaldo</small><b id="marks">237</b><div class="bar"><i id="markbar" style="width:90%"></i></div></div><div class="metric"><small>Pasos marcados en este mapa</small><b id="regionprogress">—</b><small id="percent">Cambia al avanzar</small></div><div class="metric"><small>Tu siguiente paso</small><b style="font-size:16px" id="checkpoint">Hablar con Gen</b><small>Se actualiza al marcar pasos</small></div></div>
@@ -139,6 +139,227 @@ function numberFromItem(it,region){
   return null;
 }
 // A first-visit task can be inserted exactly between its original numbered neighbors.
+// Platinum Companion v1.4 - presentation-only localisation of PowerPyx index.
+// Original IDs are unchanged, so previously saved progress remains valid.
+const PBZ_BELLS_ES={
+ 'The Beginning':'El comienzo', 'The Lady’s Rift':'Grieta de la Dama', 'The Lady\'s Rift':'Grieta de la Dama',
+ 'Crimson Forest':'Bosque Carmesí','Abandoned Main Road':'Camino principal abandonado',
+ 'Pangzhen Bridge Overlook':'Mirador del puente de Pangzhen', 'Trail of Cages':'Sendero de las jaulas',
+ 'Outlaw Trap':'Trampa del forajido', 'Place of Awakening':'Lugar del despertar', 'Crossroads':'Encrucijada',
+ 'Old Man Gen’s Hideout':'Escondite del anciano Gen', 'Young Master Lan’s Hideout':'Escondite del joven maestro Lan',
+ 'Well of the Three Puppets':'Pozo de las tres marionetas', 'Hidden Storehouse':'Almacén oculto',
+ 'Abandoned Wine Cellar':'Bodega abandonada','South Gate Bridge':'Puente de la puerta sur',
+ 'Jingyang Hall':'Salón Jingyang','Marketplace':'Mercado','Huang Manor Crossroads':'Cruce de la mansión Huang',
+ 'Pavilion of Knowledge Crossroads':'Cruce del Pabellón del Conocimiento',
+ 'Sunset Path':'Camino del atardecer','Cliffside Walkway Entrance':'Entrada a la pasarela del acantilado',
+ 'Cliffside Walkway Overlook':'Mirador de la pasarela del acantilado', 'Mass Grave':'Fosa común',
+ 'Three Towers':'Tres Torres', 'Behind the Encampment Waterfall':'Detrás de la cascada del campamento',
+ 'Encampment Waterfall':'Cascada del campamento', 'Moji’s Cenotaph':'Cenotafio de Moji',
+ 'The Lady’s Path':'Sendero de la Dama', 'Iron Butcher’s Camp':'Campamento del Carnicero de Hierro',
+ 'Hanging Cage Cavern':'Caverna de las jaulas colgantes','Cavern Passage':'Pasaje de la caverna',
+ 'Commander’s Platform':'Plataforma del comandante','Estate Rear Gate':'Puerta posterior de la mansión',
+ 'Green Serpent House':'Casa de la Serpiente Verde','Nuo Mask Altar':'Altar de máscaras Nuo',
+ 'Back Hill':'Colina trasera', 'Opera House':'Ópera','Shaded Bamboo Path':'Sendero de bambú sombreado',
+ 'Mountain God Temple':'Templo del dios de la montaña',
+ 'The Last Mandate Encampment':'Último campamento del Mandato','The Giant’s Lair':'Guarida del gigante',
+ 'Terraces':'Terrazas','Pangzhen Docks':'Muelles de Pangzhen','Pangzhen Sha-Chi Tower Upper Level 1':'Torre Sha-Chi de Pangzhen, planta superior 1',
+ 'Pangzhen Sha-Chi Tower Summit':'Cima de la Torre Sha-Chi de Pangzhen',
+ 'Pangzhen Sha-Chi Tower Furnace':'Horno de la Torre Sha-Chi de Pangzhen'
+};
+const PBZ_ITEM_ES={
+ 'Memory Flower':'Flor de memoria','Blackstone Fragment':'Fragmento de piedra negra',
+ 'Sha-Chi Amber Fragment':'Fragmento de ámbar Sha-Chi',
+ 'Hero’s Courage':'Coraje del héroe',"Hero's Courage":'Coraje del héroe',
+ 'Sanguine Twin':'Sanguínea gemela','Jagged Steel':'Acero serrado',
+ 'Four Fierce Axes':'Cuatro hachas feroces','Flesh Lily':'Lirio de carne',
+ 'Triple Threat':'Triple amenaza', 'Young Mistress':'Señorita joven',
+ 'Young Master Lan':'Joven maestro Lan','The Journey Home':'Viaje a casa',
+ 'Baishan Writ':'Edicto Baishan','Cui':'Cui','Broken Vessel':'Vasija rota',
+ 'Banyan Tree':'Árbol banyan','Scarecrow':'Espantapájaros',
+ 'Crescent Blade':'Hoja creciente','Craftsman’s Tool Kit':'Kit de herramientas del artesano',
+ 'Craftsman\'s Tool Kit':'Kit de herramientas del artesano',
+ 'Bonesaw':'Sierra de hueso','The Way Forward':'El camino a seguir',
+ 'Hero’s Lament':'Lamento del héroe','The Broad Saber':'El sable ancho',
+ 'Plain Sword Tassel':'Borla de espada lisa','Fire Meteor':'Meteorito de fuego',
+ 'Iron Butcher Mask':'Máscara del Carnicero de Hierro',
+ 'Everlasting Flame':'Llama eterna','Maintenance Oil':'Aceite de mantenimiento',
+ 'Ritual Wine':'Vino ritual', 'Executioner’s Headscarf':'Tocado del verdugo',
+ 'Nuo Mask Fragment: Sorrow':'Fragmento de máscara Nuo: Tristeza',
+ 'Nuo Mask Fragment: Wrath':'Fragmento de máscara Nuo: Ira',
+ 'Nuo Mask':'Máscara Nuo','Tiger Cannon':'Cañón Tigre',
+ 'Jewel’s Knot':'Nudo de Jade', 'Jewel\'s Knot':'Nudo de Jade',
+ 'Crimson Resolve':'Resolución carmesí',
+ 'Simmering Brew':'Brebaje a fuego lento', 'Shieldbreaker Talisman':'Talismán rompeescudos',
+ 'Yu’er’s Memory Flower':'Flor de memoria de Yu’er',
+ 'Patron Gao’s Memory Flower':'Flor de memoria del patrón Gao',
+ 'Thread-Binding Disciple’s Memory Flower':'Flor de memoria del discípulo de los hilos',
+ 'The Crusher and the Saw':'La trituradora y la sierra',
+ 'Struggle':'Esfuerzo','Thread-Binding Sect':'Secta de los hilos',
+ 'Abnormality':'Anomalía','Gone Without a Trace':'Desaparición',
+ 'Scrawny Leg':'Pierna débil','Infighting':'Conflicto interno',
+ 'Mastermind':'Cerebro','Meng Hua':'Meng Hua'
+};
+function pbzBellES(raw){let x=String(raw||'').trim().replace(/^the\s+/i,'The ');return PBZ_BELLS_ES[x]||x}
+function pbzItemES(raw){
+ let x=String(raw||'').trim().replace(/\s+\(Complete\)$/i,' — completar');
+ if(PBZ_ITEM_ES[x])return PBZ_ITEM_ES[x];
+ let m=x.match(/^(.+?)\s*–\s*(\d+)\.\s*(.+)$/);
+ if(m)return pbzItemES(m[1])+' — '+m[2]+'. '+pbzItemES(m[3]);
+ return x.replace(/\bMemory Flower\b/gi,'flor de memoria').replace(/\bBlackstone Fragment\b/gi,'fragmento de piedra negra').replace(/\bSha-Chi Amber Fragment\b/gi,'fragmento de ámbar Sha-Chi')
+         .replace(/\bTalisman\b/gi,'talismán').replace(/\bMask Fragment\b/gi,'fragmento de máscara')
+         .replace(/\bFragment\b/gi,'fragmento').replace(/\bQuick Hand’s Request\b/gi,'Encargo de Mano Rápida')
+         .replace(/\bTreasure\b/gi,'tesoro').replace(/\bMedicine\b/gi,'medicina');
+}
+function pbzParseItem(entry){
+ let src=String(entry.name||'').replace(/[\u00a0\t\n]+/g,' ').trim();
+ let m=src.match(/^#\s*(\d+)\s*[·–-]\s*/);
+ const no=m?Number(m[1]):null;
+ if(m)src=src.slice(m[0].length);
+ let original=src,kind='Coleccionable',short='',rest='',bell='';
+ const typeList=[
+  ['Phantom Edge Tempering Material','Material de templado de filo fantasma'],
+  ['Weapon Tempering Material','Material de templado'],
+  ['Tempering Materials','Material de templado'],['Tempering Material','Material de templado'],
+  ['Accessory Fragment','Fragmento de accesorio'],['Memory Flower','Flor de memoria'],
+  ['Phantom Edge','Arma fantasma'],['Accessory','Accesorio'],['Weapon','Arma'],
+  ['Medicine','Medicina'],['Tales','Misión secundaria'],['Tale','Misión secundaria'],
+  ['Quest','Misión secundaria'],['Challenge Location','Desafío'],['Challenge','Desafío'],
+  ['Key Item','Objeto clave'],['Upgrade','Mejora'],['Boss','Jefe'],['Bell','Campana'],
+  ['Treasure','Tesoro']
+ ];
+ function kindFor(english){return (typeList.find(([a])=>a.toLowerCase()===String(english).toLowerCase())||[])[1]||'Coleccionable';}
+ // Unnumbered listings: "Weapon Tempering Material: ... Bell: ..."
+ const tag=src.match(/^(Phantom Edge Tempering Material|Weapon Tempering Material|Tempering Material|Accessory Fragment|Memory Flower|Phantom Edge|Accessory|Weapon|Medicine|Quest|Tales|Tale|Boss|Upgrade|Key Item|Treasure)\s*:/i);
+ if(tag){kind=kindFor(tag[1]); src=src.slice(tag[0].length).trim();}
+ if(/^Bell\s*\(/i.test(src)){
+  kind='Campana';let b=src.match(/^Bell\s*\(([^)]+)\)\s*/i);if(b){short=pbzBellES(b[1]);rest=src.slice(b[0].length)}
+ }else if(/^Bell\s*[–-]\s*\(/i.test(src)){
+  kind='Campana';let b=src.match(/^Bell\s*[–-]\s*\(([^)]+)\)\s*/i);if(b){short=pbzBellES(b[1]);rest=src.slice(b[0].length)}
+ }
+ // In unnumbered guides, the entire heading was flattened, including the Bell field.
+ const embeddedBell=src.match(/^(.*?)\s+Bell:\s+(.+)$/i);
+ if(embeddedBell){
+   src=embeddedBell[1].trim();
+   const p=embeddedBell[2].match(/^(.+?)(?=\s+(?:From|Go|In|On|At|After|Directly|Follow|Near|Continue|Walk|Climb|Behind|Beside|Before|Obtained|Reward|To the|Southeast|Southwest|Northeast|Northwest|South|North|East|West|Turn|Cross|Make|Speak)\b|$)/i);
+   if(p){bell=pbzBellES(p[1]);rest=embeddedBell[2].slice(p[1].length).trim();}
+ }
+ if(!short){
+  const monsterFlower=src.match(/^Memory Flower of the Monster\s*[–-]\s*(\d+)\.\s*(.+)$/i);
+  if(monsterFlower){kind='Flor de memoria';short='Flor de memoria del monstruo — '+monsterFlower[1]+'. '+pbzItemES(monsterFlower[2]);}
+  const namedFlower=src.match(/^Memory Flower\s*[–-]\s*(.*?)\s*[–-]\s*(\d+)\.\s*(.+)$/i);
+  if(namedFlower){
+    kind='Flor de memoria';
+    short='Flor de memoria — '+pbzItemES(namedFlower[2])+'. '+pbzItemES(namedFlower[3]);
+    const owner=namedFlower[1].replace(/\s*Memory Flower$/i,'').replace(/[’']s$/,'').trim();
+    if(owner)short='Flor de memoria de '+owner+' — '+namedFlower[2]+'. '+pbzItemES(namedFlower[3]);
+  }
+ }
+ if(!short){
+  // Numbered "Hero's Courage (Tempering Material) – BUGGY From ..."
+  let p=src.match(/^(.{2,100}?)\s*\((Accessory|Accessory Fragment|Weapon|Phantom Edge|Tempering Material|Tempering Materials|Medicine|Tale|Tales|Quest|Challenge Location|Challenge|Key Item|Treasure)\)\s*/i);
+  if(p){short=pbzItemES(p[1]);kind=kindFor(p[2]);rest=[rest,src.slice(p[0].length)].filter(Boolean).join(' ')}
+  else if(/^Memory Flower\b/i.test(src)){
+   if(/^Memory Flower of the Monster/i.test(src))kind='Flor de memoria';
+   kind='Flor de memoria';let n=src.match(/^(Memory Flower(?:\s*[–-]\s*(?:(?!\bBell:|\bFrom\b|\bDirectly\b).){1,85})?)\s*/i);
+   short=pbzItemES(n?n[1]:'Memory Flower');rest=[rest,src.slice(n?n[0].length:'Memory Flower'.length)].filter(Boolean).join(' ');
+  }
+  else if(/^Bell\s*:/i.test(src)){kind='Campana';rest=src.replace(/^Bell\s*:\s*/i,'');let b=rest.match(/^(.+?)(?=\s+(?:From|In|On|At|After|Directly|Follow|Next|Past|Near|Behind|Before|Climb|Continue|Go|Walk|This|Unlocks|Automatically)\b|$)/i);if(b){short=pbzBellES(b[1]);rest=rest.slice(b[1].length)}}
+  else {
+   let b=src.match(/^(Blackstone Fragment|Sha-Chi Amber Fragment|Memory Flower|Banyan Tree|Scarecrow|Quick Hand.s Request|[\w’'\- ]+?)\s*(?=From\b|Directly\b|In the\b|On the\b|After\b|Reward for\b|Automatically\b|Unlocks\b|Beside\b|Near\b|At the\b|Behind\b|By the\b|Following\b|Obtained\b|Talk to\b|Accepted\b|Defeat\b|To the\b|Walk\b|Go\b|Continue\b|$)/i);
+   if(b){short=pbzItemES(b[1]);rest=[rest,src.slice(b[1].length)].filter(Boolean).join(' ')}else{short=pbzItemES(src.substring(0,75));rest=[rest,src.slice(75)].filter(Boolean).join(' ')}
+   if(/^Blackstone Fragment/i.test(short)||/^fragmento de piedra negra/i.test(short)||/^Sha-Chi Amber Fragment/i.test(short)||/^fragmento de ámbar/i.test(short))kind='Mejora';
+   else if(/^Memory Flower/i.test(short)||/^flor de memoria/i.test(short))kind='Flor de memoria';
+   else if(/^Banyan Tree/i.test(short)||/^árbol banyan/i.test(short))kind='Desafío';
+   else if(/^Scarecrow/i.test(short)||/^Espantapájaros/i.test(short))kind='Desafío';
+  }
+ }
+ // Unnumbered entries can carry "Bell: [location] [directions]".
+ const bellMatch=(rest||'').match(/\bBell:\s*(.+?)(?=\s+(?:From|Go|In|On|At|After|Directly|Follow|Near|Continue|Walk|Climb|Behind|Beside|Before|Obtained|Reward|To the|Southeast|Southwest|Northeast|Northwest|South|North|East|West|Turn|Cross|Make|Speak)\b|$)/i);
+ if(bellMatch){bell=pbzBellES(bellMatch[1]);rest=rest.replace(bellMatch[0],' ').trim();}
+ if(!bell){const m=(rest||'').match(/\bFrom (?:the )?(.{2,95}?) Bell\b/i);if(m)bell=pbzBellES(m[1]);}
+ if(!bell){const m=(rest||'').match(/\b(?:beside|behind|near|next to) (?:the )?(.{2,80}?) Bell\b/i);if(m)bell=pbzBellES(m[1]);}
+ short=short.replace(/^\s*[-–—]+\s*/,'').replace(/\s*[-–—]+\s*(BUGGY|MISSABLE)\s*$/i,'').trim();
+ // Never expose a flattened paragraph as a gigantic English checklist title.
+ if(short.length>96 || /\b(?:From the|Continue through|Directly beside|Reward for|After defeating)\b/i.test(short)){
+   const compact=short.split(/\s+(?:From|Continue|Directly|Reward|After|Follow|Go|Walk|In the|On the)\b/i)[0];
+   short=compact.length<=96?compact:(kind==='Coleccionable'?'Objeto por identificar':kind);
+ }
+
+ rest=rest.replace(/^\s*[-–—]+\s*(?:BUGGY|MISSABLE)?\s*/i,'').trim();
+ if(/^Memory Flower$/i.test(short))short='Flor de memoria';
+ if(/^Flor de memoria de Yu’er/i.test(short))short=short.replace(/^Flor de memoria de Yu’er/, 'Flor de memoria de Yu’er');
+ if(/^Bell$/i.test(short))short='Campana';
+ // Some unnumbered memory-flower titles consist of a descriptive name plus a "Bell:" field.
+ if(kind==='Flor de memoria') short=pbzItemES(short);
+ const isBug=/\bBUGGY\b/i.test(original),isMissable=/\bMISSABLE\b/i.test(original);
+ return {id:entry.id,no,kind,short,rest,bell,isBug,isMissable,original};
+}
+function pbzSpanishDirections(parsed,entry){
+ const s=String(parsed.rest||''), anchor=parsed.bell;
+ if(entry.region==='Mandato'&&entry.num===50)return 'Desde la campana «Detrás de la cascada del campamento», avanza pasando el edificio de la izquierda. Rodea el edificio grande que está más adelante y derrota al NPC amistoso que se transforma en enemigo. Si reuniste las cuatro flores de memoria asociadas, también recibirás Coraje del héroe. ⚠ Posible bug: guarda antes del combate y verifica la recompensa.';
+ if(entry.region==='Mandato'&&entry.num===55)return 'Después de derrotar a Yubi (marioneta espadachina n.º 21), busca la flor en las escaleras situadas a la derecha de la arena.';
+ if(entry.region==='Mandato'&&entry.num===56)return 'Desde la flor anterior, continúa subiendo las escaleras hasta llegar arriba; allí está la siguiente flor de memoria.';
+ const bits=[];
+ const previous=/\b(?:from|after) (?:the )?previous (?:collectible|item|objective|one|location)/i.test(s);
+ if(previous)bits.push('Desde el coleccionable anterior');
+ else if(anchor)bits.push('Desde la campana «'+anchor+'»');
+ const templates=[
+  [/\b(?:turn (?:to your |around |onto )?|head to the )(left)\b|\bon the left\b/i,'dirLeft','gira o busca a la izquierda'],
+  [/\b(?:turn (?:to your |around |onto )?|head to the )(right)\b|\bon the right\b/i,'dirRight','gira o busca a la derecha'],
+  [/\b(?:go|run|walk|climb|continue|head|make your way)\s+up\s+(?:the\s+)?(?:stairs|staircase)/i,'up','sube las escaleras'],
+  [/\b(?:go|run|walk|climb|continue|head|make your way)\s+up\s+(?:the\s+)?ladder/i,'upladder','sube por la escalera de mano'],
+  [/\b(?:go|run|walk|climb|continue|head|make your way)\s+up\s+(?:the\s+)?hill/i,'uphill','sube la pendiente'],
+  [/\b(?:go|walk|run|climb|continue|head|drop)\s+down\s+(?:the\s+)?(?:stairs|staircase)/i,'down','baja las escaleras'],
+  [/\b(?:go|walk|run|climb|continue|head|drop)\s+down\s+(?:the\s+)?ladder/i,'downladder','baja por la escalera de mano'],
+  [/\b(?:go|walk|run|climb|continue|head|drop)\s+down\s+(?:the\s+)?(?:hill|cliff)/i,'downhill','baja por la pendiente o el acantilado'],
+  [/\b(?:cross|go across|head across|walk across|jump across)\s+(?:the\s+)?(?:bridge|wooden bridge)/i,'bridge','cruza el puente'],
+  [/\b(?:follow|continue along|keep following)\s+(?:the\s+)?(?:main\s+)?(?:path|road|trail)/i,'follow','sigue el sendero principal'],
+  [/\b(?:through|enter|go into)\s+(?:the\s+)?(?:cave|tunnel)/i,'cave','entra en la cueva o túnel'],
+  [/\b(?:enter|go into|inside|in)\s+(?:the\s+)?(?:building|house)/i,'house','revisa el edificio'],
+  [/\b(?:across|along|over)\s+(?:the\s+)?(?:rooftops?|roofs?)/i,'roof','avanza por los tejados'],
+  [/\b(?:drop|jump)\s+down\b/i,'drop','déjate caer al nivel inferior'],
+  [/\b(?:climb|grapple)\s+(?:up|onto)\b/i,'climb','trepa hasta la plataforma superior'],
+  [/\b(?:river|stream)\b/i,'river','busca junto al río'],
+  [/\bwaterfall\b/i,'waterfall','busca junto a la cascada'],
+  [/\b(?:scaffolding)\b/i,'scaffold','avanza por los andamios'],
+  [/\b(?:southeast)\b/i,'southeast','dirígete al sureste'],
+  [/\b(?:southwest)\b/i,'southwest','dirígete al suroeste'],
+  [/\b(?:northeast)\b/i,'northeast','dirígete al noreste'],
+  [/\b(?:northwest)\b/i,'northwest','dirígete al noroeste'],
+  [/\b(?:behind)\s+(?:the\s+)?(?:building|house|wall)/i,'behind','rodea hasta la parte trasera del edificio'],
+  [/\b(?:open|in|inside|from)\s+(?:the\s+)?(?:chest|chests?)\b/i,'chest','abre el cofre'],
+  [/\b(?:reward for|obtained (?:by|after))\s+defeating\b/i,'reward','se consigue como recompensa de un combate'],
+  [/\bdefeat (?:all )?(?:the )?(?:enemies|enemy|monks|boss|friendly NPC)/i,'defeat','derrota a los enemigos de esa zona'],
+  [/\b(?:talk|speak)\s+to\b/i,'talk','habla con el personaje indicado'],
+  [/\b(?:directly|right)\s+(?:beside|next to|behind)\s+(?:the\s+)?(?:bell|camp|shrine)/i,'beside','está justo al lado del punto de referencia'],
+  [/\b(?:arena where you fought|in the arena)\b/i,'arena','revisa la arena del jefe'],
+  [/\b(?:upstairs|top floor|upper level|at the top)\b/i,'top','busca en la planta superior'],
+  [/\b(?:ground|floor)\b/i,'ground','revisa el suelo de la zona'],
+  [/\b(?:automatically obtained|automatically unlocked|unlocks automatically|story.related|through the story)\b/i,'story','se obtiene automáticamente al avanzar en la historia']
+ ];
+ const found=[];
+ for(const [re,key,phrase] of templates){let m=s.match(re);if(m)found.push({position:m.index,key,phrase});}
+ found.sort((a,b)=>a.position-b.position);
+ const seen=new Set();for(const a of found){if(!seen.has(a.key)){seen.add(a.key);bits.push(a.phrase);}if(bits.length>=6)break;}
+ if(parsed.isBug)bits.push('⚠ Posible bug indicado por PowerPyx: verifica el botín antes de seguir');
+ if(parsed.isMissable)bits.push('⚠ Perdible: comprueba sus condiciones antes de continuar');
+ if(bits.length===0)return 'Ubicación pendiente de traducción detallada. Usa «Notas y fuente» para consultar el recorrido original de PowerPyx.';
+ if(bits.length===1 && (previous||anchor))return bits[0]+'. El trayecto exacto debe comprobarse en PowerPyx.';
+ return bits.join(' → ')+'. Recorrido resumido; consulta la fuente para los giros y requisitos exactos.';
+}
+function pbzLocalizeEntry(entry){
+ const p=pbzParseItem(entry);
+ let category=p.kind;
+ const risk=entry.priority||'';
+ if(p.isBug)category=category||'Coleccionable';
+ return {...entry,name:(p.no!==null?'#'+p.no+' · ':'')+p.short,
+  kind:category,
+  detail:pbzSpanishDirections(p,entry),
+  bell:p.bell||entry.bell||'',
+  priority:p.isMissable?'Perdible':(p.isBug?'Alta':risk),
+  localized:true};
+}
+
 function augmentCatalog(catalog){
   if(!catalog||!catalog.maps||typeof catalog.count!=='number'||catalog.count<350)throw Error('Catálogo incompleto o inválido; se conserva la guía actual');
   for(const [region,entries] of Object.entries(catalog.maps)){
@@ -156,7 +377,7 @@ function augmentCatalog(catalog){
         continue;
       }
       const isNew=entry.phase==='Primera visita';
-      add(region,entry.phase,{...entry,kind:entry.kind||'Coleccionable',priority:entry.priority||'',status:'Por comprobar',source:entry.sourcePage||entry.source});
+      add(region,entry.phase,{...pbzLocalizeEntry(entry),status:'Por comprobar',source:entry.sourcePage||entry.source});
     }
     if(['Valle','Bosque','Lu','Pangzhen','Mandato','Meigu','Montaña'].includes(region)){
       // Don't reorder older return instructions: only merge first-visit items by exact catalogue number.
@@ -188,7 +409,7 @@ async function refreshCatalog(){
     if(!resp.ok)throw Error('Aún no se ha generado catalog.json');
     const data=await resp.json();
     augmentCatalog(data);render();
-    badge.innerHTML='<strong>Catálogo PowerPyx sincronizado:</strong> '+data.count+' pasos publicados en '+Object.keys(data.maps).length+' áreas, con advertencias y enlaces a la ruta original. Los trayectos breves no sustituyen la guía completa de PowerPyx. Tus marcas permanecen guardadas en este dispositivo.';
+    badge.innerHTML='<strong>Catálogo PowerPyx en español:</strong> '+data.count+' pasos publicados en '+Object.keys(data.maps).length+' áreas, con advertencias y enlaces a la ruta original. Nombres y orientaciones resumidas en español; consulta PowerPyx para verificar la ruta original y requisitos. Tus marcas permanecen guardadas en este dispositivo.';
   }catch(err){
     badge.innerHTML='<strong>Catálogo por completar:</strong> esta versión conserva tus pasos anteriores y ya muestra las alertas de bugs verificadas. Para añadir todos los puntos de PowerPyx, ejecuta la acción «Actualizar inventario PowerPyx» en GitHub → Actions. Ninguna marca personal se modifica.';
   }
