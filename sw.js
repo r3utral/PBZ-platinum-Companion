@@ -1,6 +1,6 @@
-/* Platinum Companion v1.6.1 — increase CACHE_VERSION when publishing updates. */
-const CACHE_VERSION='platinum-companion-app-v1.6.1';
-const ASSETS=['./','./index.html','./manifest.webmanifest','./icons/icon-192.png','./icons/icon-512.png'];
+/* Platinum Companion v1.6.2 — increase CACHE_VERSION when publishing updates. */
+const CACHE_VERSION='platinum-companion-app-v1.6.2';
+const ASSETS=['./','./index.html','./manifest.webmanifest','./icons/icon-192.png','./icons/icon-512.png','./catalog.json'];
 self.addEventListener('install', event=>{
   event.waitUntil((async()=>{
     const cache=await caches.open(CACHE_VERSION);
